@@ -17,11 +17,11 @@ export function initContactForm() {
 
     // Loading / Transmitting state
     submitBtn.disabled = true;
-    submitBtn.innerHTML = '<span>TRANSMITTING INQUIRY... ⏳</span>';
+    submitBtn.innerHTML = '<span>SENDING MESSAGE... ⏳</span>';
 
     if (statusMsg) {
       statusMsg.className = 'form-status-msg transmitting';
-      statusMsg.textContent = 'CONNECTING TO STUDIO DISPATCH PROTOCOL...';
+      statusMsg.textContent = 'Transmitting message to Gmail...';
     }
 
     try {
@@ -38,10 +38,10 @@ export function initContactForm() {
       const data = await response.json();
 
       if (data.success) {
-        submitBtn.innerHTML = '<span>INQUIRY TRANSMITTED ✓</span>';
+        submitBtn.innerHTML = '<span>MESSAGE SENT ✓</span>';
         if (statusMsg) {
           statusMsg.className = 'form-status-msg success';
-          statusMsg.innerHTML = '<strong>INQUIRY TRANSMITTED SUCCESSFULLY ✓</strong><br>Dispatched directly to akbarali1582005@gmail.com. Akbar Ali will review your project and respond promptly.';
+          statusMsg.innerHTML = '<strong>MESSAGE DELIVERED ✓</strong><br>Dispatched directly to akbarali1582005@gmail.com. You will receive a response within 12–24h.';
         }
         contactForm.reset();
 
@@ -59,7 +59,7 @@ export function initContactForm() {
 
       if (statusMsg) {
         statusMsg.className = 'form-status-msg error';
-        statusMsg.innerHTML = '<strong>TRANSMISSION FAILED</strong><br>Please contact directly via <a href="mailto:akbarali1582005@gmail.com" style="color: inherit; text-decoration: underline;">akbarali1582005@gmail.com</a> or WhatsApp (+92 309 6852435).';
+        statusMsg.innerHTML = '<strong>TRANSMISSION FAILED</strong><br>Please contact directly via <a href="mailto:akbarali1582005@gmail.com" style="color: inherit; text-decoration: underline;">akbarali1582005@gmail.com</a> or WhatsApp (+92 317 7856049).';
       }
     }
   });

@@ -3,52 +3,62 @@
  */
 
 export function initMotion() {
-  // 1. Canvas Interactive Ambient Spotlight
+  // 1. Canvas Interactive Ambient Spotlight (Desktop Only)
   const canvas = document.getElementById('ambient-canvas');
   if (canvas) {
-    const ctx = canvas.getContext('2d');
-    let width = (canvas.width = window.innerWidth);
-    let height = (canvas.height = window.innerHeight);
+    const isMobileOrTouch = window.innerWidth < 860 || window.matchMedia('(hover: none)').matches;
+    if (isMobileOrTouch) {
+      canvas.style.display = 'none';
+    } else {
+      const ctx = canvas.getContext('2d');
+      let width = (canvas.width = window.innerWidth);
+      let height = (canvas.height = window.innerHeight);
 
-    let mouseX = width / 2;
-    let mouseY = height / 3;
-    let targetX = mouseX;
-    let targetY = mouseY;
+      let mouseX = width / 2;
+      let mouseY = height / 3;
+      let targetX = mouseX;
+      let targetY = mouseY;
 
-    window.addEventListener('resize', () => {
-      width = canvas.width = window.innerWidth;
-      height = canvas.height = window.innerHeight;
-    });
+      window.addEventListener('resize', () => {
+        if (window.innerWidth < 860) {
+          canvas.style.display = 'none';
+        } else {
+          canvas.style.display = 'block';
+          width = canvas.width = window.innerWidth;
+          height = canvas.height = window.innerHeight;
+        }
+      });
 
-    window.addEventListener('mousemove', (e) => {
-      targetX = e.clientX;
-      targetY = e.clientY;
-    });
+      window.addEventListener('mousemove', (e) => {
+        targetX = e.clientX;
+        targetY = e.clientY;
+      });
 
-    function renderCanvas() {
-      mouseX += (targetX - mouseX) * 0.05;
-      mouseY += (targetY - mouseY) * 0.05;
+      function renderCanvas() {
+        mouseX += (targetX - mouseX) * 0.05;
+        mouseY += (targetY - mouseY) * 0.05;
 
-      ctx.clearRect(0, 0, width, height);
+        ctx.clearRect(0, 0, width, height);
 
-      const gradient = ctx.createRadialGradient(
-        mouseX,
-        mouseY,
-        50,
-        mouseX,
-        mouseY,
-        550
-      );
-      gradient.addColorStop(0, 'rgba(255, 85, 0, 0.09)');
-      gradient.addColorStop(0.5, 'rgba(255, 85, 0, 0.02)');
-      gradient.addColorStop(1, 'transparent');
+        const gradient = ctx.createRadialGradient(
+          mouseX,
+          mouseY,
+          50,
+          mouseX,
+          mouseY,
+          550
+        );
+        gradient.addColorStop(0, 'rgba(255, 85, 0, 0.09)');
+        gradient.addColorStop(0.5, 'rgba(255, 85, 0, 0.02)');
+        gradient.addColorStop(1, 'transparent');
 
-      ctx.fillStyle = gradient;
-      ctx.fillRect(0, 0, width, height);
+        ctx.fillStyle = gradient;
+        ctx.fillRect(0, 0, width, height);
 
-      requestAnimationFrame(renderCanvas);
+        requestAnimationFrame(renderCanvas);
+      }
+      renderCanvas();
     }
-    renderCanvas();
   }
 
   // 2. Smooth Anchor Navigation
