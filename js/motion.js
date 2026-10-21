@@ -256,4 +256,55 @@ export function initMotion() {
       });
     }
   }
+
+  // 7. Interactive Top Scroll Progress Bar
+  const progressBar = document.getElementById('scroll-progress-bar');
+  if (progressBar) {
+    const updateProgress = () => {
+      const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+      if (scrollHeight > 0) {
+        const scrolledPercent = (window.scrollY / scrollHeight) * 100;
+        progressBar.style.width = `${Math.min(100, Math.max(0, scrolledPercent))}%`;
+      }
+    };
+    window.addEventListener('scroll', updateProgress, { passive: true });
+    updateProgress();
+  }
+
+  // 8. Interactive 3D Card Hover Perspective Physics (Desktop & Tablets)
+  if (window.matchMedia('(hover: hover) and (min-width: 860px)').matches) {
+    const interactiveCards = document.querySelectorAll('.project-card, .service-split-card, .experience-card-elevated');
+    interactiveCards.forEach((card) => {
+      card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left - rect.width / 2;
+        const y = e.clientY - rect.top - rect.height / 2;
+        const tiltX = (y / (rect.height / 2)) * -3.2;
+        const tiltY = (x / (rect.width / 2)) * 3.2;
+        card.style.transform = `perspective(1000px) rotateX(${tiltX.toFixed(2)}deg) rotateY(${tiltY.toFixed(2)}deg) translateY(-5px)`;
+      });
+
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = '';
+      });
+    });
+  }
+
+  // 9. Metric Numbers Live Viewport Trigger
+  const metricNumbers = document.querySelectorAll('.metric-number');
+  if (metricNumbers.length && 'IntersectionObserver' in window) {
+    const metricObserver = new IntersectionObserver(
+      (entries, obs) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('counted-in');
+            obs.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+    metricNumbers.forEach((el) => metricObserver.observe(el));
+  }
 }
+
