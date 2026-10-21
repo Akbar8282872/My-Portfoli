@@ -1,0 +1,1267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akbar Ali — Creative Full Stack Developer</title>
+  <meta name="description" content="Akbar Ali is an Executive Creative Full Stack Developer specializing in high-performance web applications, scalable software development, and conversion-focused systems.">
+  <meta name="keywords" content="Akbar Ali, Creative Full Stack Developer, Web Development, Software Engineering, Systems Architect, TypeScript, Next.js, Pakistan">
+  <meta name="author" content="Akbar Ali">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Akbar Ali — Creative Full Stack Developer">
+  <meta property="og:description" content="Architecting high-performance web applications and conversion-driven software products with pixel perfection.">
+  <meta property="og:image" content="assets/images/ali-cutout.png">
+
+  <!-- Google Fonts Preconnect & High-Impact Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- GSAP Libraries for Advance Level Animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/tokens.css?v=executive3">
+  <link rel="stylesheet" href="css/reset.css?v=executive3">
+  <link rel="stylesheet" href="css/base.css?v=executive3">
+  <link rel="stylesheet" href="css/layout.css?v=executive3">
+  <link rel="stylesheet" href="css/pages.css?v=executive3">
+</head>
+<body>
+
+  <!-- Interactive WebGL / Canvas Mouse Spotlight -->
+  <canvas id="ambient-canvas" aria-hidden="true"></canvas>
+
+  <!-- ========================================================================
+       TOP MINIMAL BAR (Clean, Edge-to-Edge, Zero Cheap Logo Pill)
+       ======================================================================== -->
+  <nav class="minimal-topbar" aria-label="Main Navigation">
+    <div class="topbar-brand">
+      <a href="#hero">AKBAR ALI // 2026</a>
+    </div>
+
+    <div class="topbar-nav">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#benchmarks">Benchmarks</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="topbar-right-group">
+      <div class="topbar-status">
+        <span class="status-dot"></span>
+        <span style="color: #FFFFFF; font-weight: 700;">PAKISTAN</span>
+        <span style="color: rgba(255,255,255,0.4);" id="live-pak-time">// PKT (GMT+5)</span>
+      </div>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button class="mobile-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="4" y1="12" x2="20" y2="12"></line>
+          <line x1="4" y1="6" x2="20" y2="6"></line>
+          <line x1="4" y1="18" x2="20" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Slide Drawer -->
+  <div class="mobile-drawer" aria-label="Mobile Navigation Drawer">
+    <a href="#about" class="mobile-nav-link">About & Philosophy</a>
+    <a href="#projects" class="mobile-nav-link">Selected Projects (13)</a>
+    <a href="#experience" class="mobile-nav-link">Career Experience</a>
+    <a href="#benchmarks" class="mobile-nav-link">Engineering Benchmarks</a>
+    <a href="#services" class="mobile-nav-link">Services & Scope</a>
+    <a href="#contact" class="mobile-nav-link cta-link">Initiate Project Inquiry →</a>
+  </div>
+
+  <main>
+    <!-- ======================================================================
+         THE SIGNATURE SPLIT HERO (Matt Becker Composition)
+         ====================================================================== -->
+    <section class="studio-hero" id="hero">
+      
+      <!-- Left Panel: Vibrant Studio Sunset Amber -->
+      <div class="hero-left-panel">
+        <div class="hero-meta-top">
+          <span>// CREATIVE FULL STACK</span>
+          <span>EST. 2020</span>
+        </div>
+
+        <!-- Giant Condensed Name -->
+        <div class="hero-giant-title">
+          <span>AKBAR</span>
+          <span>ALI</span>
+        </div>
+
+        <p class="hero-lead-text">
+          Architecting ideas into reality through high-performance engineering, creative full-stack web development, and resilient software systems.
+        </p>
+
+        <!-- Social Links at Bottom Edge of Orange Block -->
+        <div class="hero-social-links">
+          <a href="https://github.com" target="_blank" rel="noopener" class="hero-social-link">GITHUB</a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener" class="hero-social-link">LINKEDIN</a>
+          <a href="https://twitter.com" target="_blank" rel="noopener" class="hero-social-link">X / TWITTER</a>
+        </div>
+      </div>
+
+      <!-- Centerpiece: Transparent Cutout Portrait Overlapping the Composition -->
+      <div class="hero-center-portrait">
+        <!-- Ambient Warm Sunset Glow Behind Cutout -->
+        <div class="portrait-aura-glow" aria-hidden="true"></div>
+        <img src="assets/images/ali-cutout.png" alt="Akbar Ali — Creative Full Stack Developer portrait cutout" loading="eager">
+      </div>
+
+      <!-- Right Panel: Deep Obsidian Dark -->
+      <div class="hero-right-panel">
+        <div class="hero-capabilities-list">
+          <span class="capabilities-title">• CORE CAPABILITIES</span>
+          <span class="capability-item">Full Stack Web Architecture</span>
+          <span class="capability-item">Scalable Software Systems</span>
+          <span class="capability-item">Creative UI/UX & Motion</span>
+          <span class="capability-item">High-Speed Cloud APIs</span>
+          <span class="capability-item">TypeScript & Next.js Core</span>
+        </div>
+
+        <a href="#contact" class="btn-start-project">
+          <span>START A PROJECT</span>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+      </div>
+
+    </section>
+
+    <!-- ======================================================================
+         KINETIC RUNNING MARQUEE TICKER
+         ====================================================================== -->
+    <div class="marquee-strip" aria-hidden="true">
+      <div class="marquee-track">
+        <span>★ CREATIVE FULL STACK DEVELOPER</span>
+        <span class="accent">★ WEB & SOFTWARE ENGINEERING</span>
+        <span>★ LIGHTHOUSE 90+ GUARANTEED</span>
+        <span class="accent">★ TYPESCRIPT & NEXT.JS SYSTEMS</span>
+        <span>★ PIXEL-PERFECT GSAP ANIMATIONS</span>
+        <span class="accent">★ BASED IN PAKISTAN</span>
+        <span>★ CREATIVE FULL STACK DEVELOPER</span>
+        <span class="accent">★ WEB & SOFTWARE ENGINEERING</span>
+        <span>★ LIGHTHOUSE 90+ GUARANTEED</span>
+        <span class="accent">★ TYPESCRIPT & NEXT.JS SYSTEMS</span>
+      </div>
+    </div>
+
+
+    <!-- ======================================================================
+         ABOUT SECTION: ARCHITECTURAL DOSSIER & INTERACTIVE CRAFT CONSOLE
+         ====================================================================== -->
+    <section class="about-studio-section" id="about">
+      <div class="container">
+        
+        <!-- Editorial Header -->
+        <div class="about-header-editorial">
+          <span class="studio-tag">// 01 ARCHITECTURAL PHILOSOPHY & CAPABILITIES</span>
+          <h2 class="about-editorial-headline">
+            BRIDGING HIGH-TOUCH DESIGN WITH <span class="highlight">UNCOMPROMISING SOFTWARE RIGOR.</span>
+          </h2>
+          <p class="about-editorial-subtext">
+            Based in Pakistan and collaborating with global clients, clinics, luxury real estate developers, and tech enterprises, I engineer bespoke digital products that eliminate the generic AI-template look and command authority in competitive markets.
+          </p>
+        </div>
+
+        <!-- Interactive Architecture & Craft Console -->
+        <div class="about-console">
+          
+          <!-- Left Column: Discipline Selectors -->
+          <div class="console-nav-sidebar">
+            <span class="console-nav-header">// SELECT ARCHITECTURAL DOMAIN</span>
+            
+            <button class="console-tab-btn active" data-target-panel="panel-web">
+              <span class="tab-index">[01] PRIMARY CRAFT</span>
+              <span class="tab-title">Bespoke Web Development</span>
+              <span class="tab-summary">Conversion platforms for doctors, luxury real estate & brands</span>
+            </button>
+
+            <button class="console-tab-btn" data-target-panel="panel-software">
+              <span class="tab-index">[02] CORE ENGINEERING</span>
+              <span class="tab-title">Software & Systems</span>
+              <span class="tab-summary">Resilient APIs, microservices & real-time telemetry</span>
+            </button>
+
+            <button class="console-tab-btn" data-target-panel="panel-motion">
+              <span class="tab-index">[03] AESTHETIC PHYSICS</span>
+              <span class="tab-title">UI/UX & Motion Direction</span>
+              <span class="tab-summary">60FPS smooth inertia, GSAP ScrollTrigger & WebGL</span>
+            </button>
+
+            <button class="console-tab-btn" data-target-panel="panel-perf">
+              <span class="tab-index">[04] SPEED BENCHMARKS</span>
+              <span class="tab-title">Core Web Vitals & SEO</span>
+              <span class="tab-summary">99+ Google Lighthouse, sub-second paints & zero shift</span>
+            </button>
+          </div>
+
+          <!-- Right Column: Interactive Console Panels -->
+          <div class="console-content-panel">
+            
+            <!-- Panel 1: Web Development -->
+            <div class="console-panel-view active" id="panel-web">
+              <div class="panel-tag-row">
+                <span class="studio-tag">// DOMAIN 01: HIGH-CONVERTING WEB ARCHITECTURE</span>
+                <span class="panel-metric-pill">★ 99+ LIGHTHOUSE SPEED</span>
+              </div>
+              <h3 class="panel-headline">
+                Bespoke Client Portfolios Engineered for Doctors, Real Estate, Luxury Retail & SaaS
+              </h3>
+              <p class="panel-body-text">
+                Generic drag-and-drop builders destroy brand credibility. I engineer every client web application from raw code using Next.js 15, TypeScript, and modern CSS architecture—ensuring instant page transitions, fluid typography, and frictionless customer conversion funnels.
+              </p>
+              
+              <div class="panel-deliverables-box">
+                <span class="deliverables-title">// PRODUCTION DELIVERABLES & INTEGRATIONS</span>
+                <div class="deliverables-list">
+                  <span>Patient Intake & Triage Appointment Engines</span>
+                  <span>Interactive 3D Real Estate & Penthouse Tours</span>
+                  <span>Stripe Global Multi-Currency Checkout</span>
+                  <span>Headless CMS with Instant Edge Previews</span>
+                  <span>Dynamic OpenGraph & Automated Social Cards</span>
+                  <span>Full Cross-Device Fluid Responsive Grid</span>
+                </div>
+              </div>
+
+              <div class="panel-tech-strip">
+                <div class="panel-pills-wrap">
+                  <span class="project-pill">Next.js 15</span>
+                  <span class="project-pill">TypeScript</span>
+                  <span class="project-pill">React 19</span>
+                  <span class="project-pill">Tailwind CSS</span>
+                  <span class="project-pill">PostgreSQL</span>
+                  <span class="project-pill">Stripe API</span>
+                </div>
+                <a href="#projects" class="project-btn-link">EXPLORE 10 WEB PROJECTS ↓</a>
+              </div>
+            </div>
+
+            <!-- Panel 2: Software Development -->
+            <div class="console-panel-view" id="panel-software">
+              <div class="panel-tag-row">
+                <span class="studio-tag">// DOMAIN 02: DISTRIBUTED SOFTWARE & BACKEND</span>
+                <span class="panel-metric-pill">★ SUB-50MS API LATENCY</span>
+              </div>
+              <h3 class="panel-headline">
+                Deterministic Cloud Microservices, High-Throughput Engines & Real-Time Telemetry
+              </h3>
+              <p class="panel-body-text">
+                When web applications demand mission-critical data processing, I architect robust backend systems using Go, Node.js, and Python. Designed with asynchronous event loops, message queues, and bulletproof database indexing to handle spike traffic without breaking.
+              </p>
+              
+              <div class="panel-deliverables-box">
+                <span class="deliverables-title">// ARCHITECTURAL SPECIFICATIONS</span>
+                <div class="deliverables-list">
+                  <span>Sub-10ms WebSockets Real-Time Data Streaming</span>
+                  <span>Redis Pub/Sub Message Broker & Cache Layer</span>
+                  <span>Containerized Docker & Kubernetes Deployment</span>
+                  <span>Automated ACID Transactions & Zero-Loss Queues</span>
+                  <span>JWT & Zero-Knowledge Identity Access Tokens</span>
+                  <span>OpenTelemetry Distributed Tracing & Health Alerts</span>
+                </div>
+              </div>
+
+              <div class="panel-tech-strip">
+                <div class="panel-pills-wrap">
+                  <span class="project-pill">Node.js</span>
+                  <span class="project-pill">Go</span>
+                  <span class="project-pill">Python</span>
+                  <span class="project-pill">PostgreSQL</span>
+                  <span class="project-pill">Redis</span>
+                  <span class="project-pill">Docker</span>
+                </div>
+                <a href="#projects" class="project-btn-link">VIEW SOFTWARE WORK ↓</a>
+              </div>
+            </div>
+
+            <!-- Panel 3: Motion & UI/UX -->
+            <div class="console-panel-view" id="panel-motion">
+              <div class="panel-tag-row">
+                <span class="studio-tag">// DOMAIN 03: TACTILE DIGITAL PHYSICS</span>
+                <span class="panel-metric-pill">★ 60FPS FLUID RENDERING</span>
+              </div>
+              <h3 class="panel-headline">
+                Micro-Interactions, Smooth Scroll Physics & Awwwards-Tier Art Direction
+              </h3>
+              <p class="panel-body-text">
+                Animation must serve a purpose: guiding the user's focus, reinforcing brand prestige, and providing tangible feedback. I implement hardware-accelerated GSAP ScrollTrigger timelines and smooth inertia scrolling that delight visitors without causing layout shifts or jank.
+              </p>
+              
+              <div class="panel-deliverables-box">
+                <span class="deliverables-title">// MOTION & INTERACTION TECHNIQUES</span>
+                <div class="deliverables-list">
+                  <span>GSAP ScrollTrigger Scroll-Tied Visual Sequences</span>
+                  <span>Lenis Inertia Smooth Physics Scroll Engine</span>
+                  <span>Interactive Mouse-Reactive Canvas Shaders</span>
+                  <span>Accessible Prefers-Reduced-Motion Fallbacks</span>
+                  <span>Tactile Button Magnetic Hover Pulls</span>
+                  <span>Zero Cumulative Layout Shift (CLS: 0.000)</span>
+                </div>
+              </div>
+
+              <div class="panel-tech-strip">
+                <div class="panel-pills-wrap">
+                  <span class="project-pill">GSAP</span>
+                  <span class="project-pill">ScrollTrigger</span>
+                  <span class="project-pill">Lenis</span>
+                  <span class="project-pill">Canvas 2D/3D</span>
+                  <span class="project-pill">CSS Custom Properties</span>
+                </div>
+                <a href="#experience" class="project-btn-link">VIEW EXPERIENCE STACK ↓</a>
+              </div>
+            </div>
+
+            <!-- Panel 4: Performance & Benchmarks -->
+            <div class="console-panel-view" id="panel-perf">
+              <div class="panel-tag-row">
+                <span class="studio-tag">// DOMAIN 04: GOOGLE LIGHTHOUSE EXCELLENCE</span>
+                <span class="panel-metric-pill">★ 100/100 AUDIT SCORE</span>
+              </div>
+              <h3 class="panel-headline">
+                Uncompromising Load Velocity, Perfect Core Web Vitals & Search Authority
+              </h3>
+              <p class="panel-body-text">
+                Every millisecond of delay costs revenue and rankings. Every line of code is optimized for raw execution speed: next-gen image compression (AVIF/WebP), zero unused JavaScript payloads, semantic HTML5 structure, and edge-cached server responses across global CDNs.
+              </p>
+              
+              <div class="panel-deliverables-box">
+                <span class="deliverables-title">// BENCHMARK VERIFICATION GUARANTEE</span>
+                <div class="deliverables-list">
+                  <span>95+ Guaranteed Google Lighthouse Across All Metrics</span>
+                  <span>Largest Contentful Paint (LCP) Under 1.2 Seconds</span>
+                  <span>Cumulative Layout Shift (CLS) Maintained at 0.00</span>
+                  <span>Structured JSON-LD Schema Markup for Search</span>
+                  <span>Automated Static HTML Pre-Rendering & CDN Edge</span>
+                  <span>Strict Content Security Policies & SSL Encryption</span>
+                </div>
+              </div>
+
+              <div class="panel-tech-strip">
+                <div class="panel-pills-wrap">
+                  <span class="project-pill">Lighthouse CI</span>
+                  <span class="project-pill">Cloudflare Edge</span>
+                  <span class="project-pill">Web Vitals</span>
+                  <span class="project-pill">Semantic HTML5</span>
+                  <span class="project-pill">JSON-LD SEO</span>
+                </div>
+                <a href="#benchmarks" class="project-btn-link">SEE LIVE BENCHMARKS ↓</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Studio Metadata Ledger (Calm & Spacious 4-Item Ribbon) -->
+        <div class="studio-meta-ledger">
+          <div class="ledger-item">
+            <span class="ledger-label">// LOCATION & ZONE</span>
+            <span class="ledger-value">Pakistan <span class="accent">(PKT // GMT+5)</span></span>
+          </div>
+          <div class="ledger-item">
+            <span class="ledger-label">// CRAFT STANDARD</span>
+            <span class="ledger-value">100% Hand-Crafted <span class="accent">// Zero Themes</span></span>
+          </div>
+          <div class="ledger-item">
+            <span class="ledger-label">// CORE DOMAINS</span>
+            <span class="ledger-value">Web Dev <span class="accent">& Software Systems</span></span>
+          </div>
+          <div class="ledger-item">
+            <span class="ledger-label">// AVAILABILITY</span>
+            <span class="ledger-value"><span class="accent">●</span> Open for Q1-Q2 Commissions</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         PROJECTS SHOWCASE: 10 WEB DEV PORTFOLIOS + 3 SOFTWARE SYSTEMS
+         ====================================================================== -->
+    <section class="projects-section" id="projects">
+      <div class="container">
+        
+        <div class="projects-header-wrap">
+          <div>
+            <span class="studio-tag" style="margin-bottom: 0.5rem;">FEATURED PORTFOLIO</span>
+            <h2 class="projects-title">SELECTED WORK & ENGINEERING</h2>
+          </div>
+
+          <!-- Category Filters -->
+          <div class="projects-filter-bar">
+            <button class="filter-btn active" data-filter="all">ALL WORK (13)</button>
+            <button class="filter-btn" data-filter="web">WEB DEV & CLIENT SITES (10)</button>
+            <button class="filter-btn" data-filter="software">SOFTWARE SYSTEMS (3)</button>
+          </div>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- ==========================================
+               10 WEB DEVELOPMENT PROJECTS (REAL WORLD CLIENTS)
+               ========================================== -->
+
+          <!-- PROJECT 1: Doctor & Clinic Portfolio (Flagship Top Big Showcase) -->
+          <div class="project-card project-card-flagship" data-category="web">
+            <div class="project-thumb-box">
+              <span class="project-badge-type">FLAGSHIP WEB DEV // MEDICAL & CLINIC</span>
+              <img src="assets/images/web-doctor-clinic.jpg" alt="Aura Derma Aesthetic Clinic & Specialist Portfolio">
+            </div>
+            <div class="project-content">
+              <span class="tag-dim">// 01 PREMIER HEALTHCARE PLATFORM</span>
+              <h3 class="project-title">Aura Derma Clinical Specialist Platform</h3>
+              <p class="project-desc">
+                High-end clinical web platform for an aesthetic medicine practice. Features interactive specialist consultation booking, patient treatment catalog, before-and-after clinical comparison slider, and automated SMS appointment triage.
+              </p>
+              <div class="project-pills">
+                <span class="project-pill">Next.js 15</span>
+                <span class="project-pill">TypeScript</span>
+                <span class="project-pill">Tailwind CSS</span>
+                <span class="project-pill">PostgreSQL</span>
+                <span class="project-pill">Twilio API</span>
+              </div>
+              <div class="project-card-footer">
+                <a href="#contact" class="project-btn-link">EXPLORE CASE STUDY →</a>
+                <span class="tag-dim">DOCTOR // HEALTHCARE</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 2: Luxury Real Estate & Estates -->
+          <div class="project-card" data-category="web">
+            <div class="project-thumb-box">
+              <span class="project-badge-type">WEB DEV // LUXURY REAL ESTATE</span>
+              <img src="assets/images/web-real-estate.jpg" alt="Elysian Living Architectural Estates and Penthouses">
+            </div>
+            <div class="project-content">
+              <span class="tag-dim">// 02 ARCHITECTURAL PROPERTIES</span>
+              <h3 class="project-title">Elysian Living Estates & Penthouse Portal</h3>
+              <p class="project-desc">
+                Conversion-focused architectural realty portal featuring interactive 3D floor plan inspection, GIS neighborhood amenity mapping, VIP private showing scheduler, and real-time mortgage qualification calculator.
+              </p>
+              <div class="project-pills">
+                <span class="project-pill">Next.js</span>
+                <span class="project-pill">Three.js</span>
+                <span class="project-pill">Mapbox GL</span>
+                <span class="project-pill">Framer Motion</span>
+                <span class="project-pill">Prisma</span>
+              </div>
+              <div class="project-card-footer">
+                <a href="#contact" class="project-btn-link">EXPLORE CASE STUDY →</a>
+                <span class="tag-dim">REAL ESTATE</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 3: Michelin-Star Restaurant & Dining (Web Dev) -->
+          <div class="project-card" data-category="web">
+            <div class="project-thumb-box">
+              <span class="project-badge-type">WEB DEV // HOSPITALITY & DINING</span>
+              <img src="assets/images/web-restaurant.jpg" alt="Nocturne Culinary Atelier Fine Dining Experience">
+            </div>
+            <div class="project-content">
+              <span class="tag-dim">// 03 CULINARY ATELIER</span>
+              <h3 class="project-title">Nocturne Atelier Fine Dining Experience</h3>
+              <p class="project-desc">
+                Sensory editorial web experience for a contemporary fine dining atelier. Includes an interactive tasting menu with allergy filters, live table reservation integration, and sommelier wine pairing notes.
+              </p>
+              <div class="project-pills">
+                <span class="project-pill">React 19</span>
+                <span class="project-pill">GSAP</span>
+                <span class="project-pill">Tailwind CSS</span>
+                <span class="project-pill">OpenTable API</span>
+                <span class="project-pill">Stripe</span>
+              </div>
+              <div class="project-card-footer">
+                <a href="#contact" class="project-btn-link">VIEW LIVE DEMO →</a>
+                <span class="tag-dim">HOSPITALITY</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 4: Corporate Law Firm & Legal Counsel (Web Dev) -->
+          <div class="project-card" data-category="web">
+            <div class="project-thumb-box">
+              <span class="project-badge-type">WEB DEV // LEGAL COUNSEL</span>
+              <img src="assets/images/web-law-firm.jpg" alt="Lexington & Vance Corporate Legal Counsel Platform">
+            </div>
+            <div class="project-content">
+              <span class="tag-dim">// 04 CORPORATE LITIGATION</span>
+              <h3 class="project-title">Lexington & Vance Legal Counsel Platform</h3>
+              <p class="project-desc">
+                Authoritative legal corporate platform with partner litigation profiles, arbitration case precedent archive, encrypted client intake forms, and automated consultation scheduling.
+              </p>
+              <div class="project-pills">
+                <span class="project-pill">Next.js 15</span>
+                <span class="project-pill">TypeScript</span>
+                <span class="project-pill">Supabase</span>
+                <span class="project-pill">Tailwind CSS</span>
+                <span class="project-pill">Cal.com API</span>
+              </div>
+              <div class="project-card-footer">
+                <a href="#contact" class="project-btn-link">VIEW CASE STUDY →</a>
+                <span class="tag-dim">LAW FIRM</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 5: Swiss Haute Horlogerie / Watch Store (Web Dev) -->
+          <div class="project-card" data-category="web">
+            <div class="project-thumb-box">
+              <span class="project-badge-type">WEB DEV // HAUTE HORLOGERIE</span>
+              <img src="assets/images/web-luxury-watch.jpg" alt="Kronos Atelier Bespoke Timepieces Atelier">
+            </div>
+            <div class="project-content">
+              <span class="tag-dim">// 05 BESPOKE TIMEPIECES</span>
+              <h3 class="project-title">Kronos Atelier Luxury Watch Atelier</h3>
+              <p class="project-desc">
+                High-touch luxury commerce experience featuring real-time 3D watch strap and bezel customization, limited-edition drop waitlists, Stripe checkout, and serial number authenticity verification.
+              </p>
+              <div class="project-pills">
+                <span class="project-pill">Next.js</span>
+                <span class="project-pill">Three.js</span>
+                <span class="project-pill">Stripe Payments</span>
+                <span class="project-pill">Zustand</span>
+                <span class="project-pill">Tailwind CSS</span>
+              </div>
+              <div class="project-card-footer">
+                <a href="#contact" class="project-btn-link">VIEW LIVE DEMO →</a>
+                <span class="tag-dim">E-COMMERCE</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 6: Creative Experience Agency (Web Dev) -->
+          <div class="project-card" data-category="web">
+            <div class="project-thumb-box">
+              <span class="project-badge-type">WEB DEV // CREATIVE AGENCY</span>
+              <img src="assets/images/web-creative-agency.jpg" alt="Verve & Co Brand Experience Studio">
+            </div>
+            <div class="project-content">
+              <span class="tag-dim">// 06 AWWWARDS-TIER SHOWCASE</span>
+              <h3 class="project-title">Verve & Co. Brand Experience Studio</h3>
+              <p class="project-desc">
+                Awwwards-tier interactive agency website featuring WebGL cursor distortion shaders, smooth Lenis inertia scrolling, case study choreography, and sound-reactive micro-interactions.
+              </p>
+              <div class="project-pills">
+                <span class="project-pill">GSAP</span>
+                <span class="project-pill">WebGL</span>
+                <span class="project-pill">Lenis Scroll</span>
+                <span class="project-pill">Vite</span>
+                <span class="project-pill">CSS Modules</span>
+              </div>
+              <div class="project-card-footer">
+                <a href="#contact" class="project-btn-link">VIEW LIVE DEMO →</a>
+                <span class="tag-dim">AGENCY</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 7: Architecture & Interior Living Spaces (Web Dev) -->
+          <div class="project-card" data-category="web">
+            <div class="project-thumb-box">
+              <span class="project-badge-type">WEB DEV // ARCHITECTURE</span>
+              <img src="assets/images/web-architecture.jpg" alt="Monoform Architectural Living Spaces">
+            </div>
+            <div class="project-content">
+              <span class="tag-dim">// 07 ARCHITECTURAL LIVING</span>
+              <h3 class="project-title">Monoform Living Architecture Portfolio</h3>
+              <p class="project-desc">
+                Clean editorial architectural showcase with high-resolution responsive masonry grid, interactive blueprint inspection slider, project timeline stories, and private inquiry funnel.
+              </p>
+              <div class="project-pills">
+                <span class="project-pill">Next.js 15</span>
+                <span class="project-pill">TypeScript</span>
+                <span class="project-pill">Framer Motion</span>
+                <span class="project-pill">Tailwind CSS</span>
+                <span class="project-pill">Vercel</span>
+              </div>
+              <div class="project-card-footer">
+                <a href="#contact" class="project-btn-link">VIEW CASE STUDY →</a>
+                <span class="tag-dim">ARCHITECTURE</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 8: Elite Fitness & Biohacking Club (Web Dev) -->
+          <div class="project-card" data-category="web">
+            <div class="project-thumb-box">
+              <span class="project-badge-type">WEB DEV // WELLNESS CLUB</span>
+              <img src="assets/images/web-fitness.jpg" alt="AeroFit Private Performance Club">
+            </div>
+            <div class="project-content">
+              <span class="tag-dim">// 08 ATHLETIC PERFORMANCE</span>
+              <h3 class="project-title">AeroFit Biohacking & Athletic Club</h3>
+              <p class="project-desc">
+                High-energy web platform for an elite fitness club with private trainer availability calendar, membership tier onboarding, class registration engine, and member telemetry portal.
+              </p>
+              <div class="project-pills">
+                <span class="project-pill">React</span>
+                <span class="project-pill">Node.js</span>
+                <span class="project-pill">Tailwind CSS</span>
+                <span class="project-pill">Stripe Billing</span>
+                <span class="project-pill">WebSockets</span>
+              </div>
+              <div class="project-card-footer">
+                <a href="#contact" class="project-btn-link">VIEW LIVE DEMO →</a>
+                <span class="tag-dim">WELLNESS</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 9: Private Wealth & Family Office (Web Dev) -->
+          <div class="project-card" data-category="web">
+            <div class="project-thumb-box">
+              <span class="project-badge-type">WEB DEV // WEALTH ADVISORY</span>
+              <img src="assets/images/web-wealth-management.jpg" alt="Apex Capital Private Wealth Advisory">
+            </div>
+            <div class="project-content">
+              <span class="tag-dim">// 09 INSTITUTIONAL WEALTH</span>
+              <h3 class="project-title">Apex Capital Private Family Office</h3>
+              <p class="project-desc">
+                Institutional wealth advisory portal featuring interactive asset allocation visualizer, historical market yield charts, multi-factor authenticated client vault, and research library.
+              </p>
+              <div class="project-pills">
+                <span class="project-pill">TypeScript</span>
+                <span class="project-pill">Next.js</span>
+                <span class="project-pill">Chart.js</span>
+                <span class="project-pill">Tailwind CSS</span>
+                <span class="project-pill">FastAPI</span>
+              </div>
+              <div class="project-card-footer">
+                <a href="#contact" class="project-btn-link">VIEW CASE STUDY →</a>
+                <span class="tag-dim">WEALTH ADVISORY</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 10: SaaS Collaborative Workspace (Web Dev) -->
+          <div class="project-card" data-category="web">
+            <div class="project-thumb-box">
+              <span class="project-badge-type">WEB DEV // SAAS PRODUCT</span>
+              <img src="assets/images/web-saas-platform.jpg" alt="PulseCloud Collaborative Team Platform">
+            </div>
+            <div class="project-content">
+              <span class="tag-dim">// 10 COLLABORATIVE WORKSPACE</span>
+              <h3 class="project-title">PulseCloud Enterprise SaaS Platform</h3>
+              <p class="project-desc">
+                Conversion-optimized product marketing web application with live interactive sandbox demo, tiered pricing calculator, feature comparison matrix, and seamless sign-up flow.
+              </p>
+              <div class="project-pills">
+                <span class="project-pill">Next.js 15</span>
+                <span class="project-pill">React 19</span>
+                <span class="project-pill">Tailwind CSS</span>
+                <span class="project-pill">Framer Motion</span>
+                <span class="project-pill">Stripe</span>
+              </div>
+              <div class="project-card-footer">
+                <a href="#contact" class="project-btn-link">VIEW LIVE DEMO →</a>
+                <span class="tag-dim">SAAS PLATFORM</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- ==========================================
+               3 SOFTWARE DEVELOPMENT PROJECTS (BACKEND & SYSTEMS)
+               ========================================== -->
+
+          <!-- PROJECT 11: DevPulse Cloud DevOps Infrastructure (Software Dev) -->
+          <div class="project-card" data-category="software">
+            <div class="project-thumb-box">
+              <span class="project-badge-type">SOFTWARE // CLOUD & DEVOPS</span>
+              <img src="assets/images/project-1-logistics.jpg" style="filter: hue-rotate(60deg) contrast(1.15);" alt="DevPulse Cloud Infrastructure Telemetry Engine">
+            </div>
+            <div class="project-content">
+              <span class="tag-dim">// 11 CONTAINER TELEMETRY ENGINE</span>
+              <h3 class="project-title">DevPulse Cloud Infrastructure Engine</h3>
+              <p class="project-desc">
+                Kubernetes cluster monitoring software backend providing real-time pod health telemetry, memory allocation graphs, automated canary deployments, and Prometheus log aggregation.
+              </p>
+              <div class="project-pills">
+                <span class="project-pill">Go Backend</span>
+                <span class="project-pill">Kubernetes</span>
+                <span class="project-pill">Prometheus</span>
+                <span class="project-pill">Docker</span>
+                <span class="project-pill">Grafana</span>
+              </div>
+              <div class="project-card-footer">
+                <a href="#contact" class="project-btn-link">VIEW ARCHITECTURE →</a>
+                <span class="tag-dim">DEVOPS SOFTWARE</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 12: Synapse AI Neural Workspace (Software Dev) -->
+          <div class="project-card" data-category="software">
+            <div class="project-thumb-box">
+              <span class="project-badge-type">SOFTWARE // AI PLATFORM</span>
+              <img src="assets/images/project-2-ai.jpg" alt="Synapse AI Neural Workspace Developer Platform">
+            </div>
+            <div class="project-content">
+              <span class="tag-dim">// 12 NEURAL INTELLIGENCE RUNTIME</span>
+              <h3 class="project-title">Synapse AI Neural Workspace Platform</h3>
+              <p class="project-desc">
+                Developer software runtime featuring interactive transformer layer visualization, sub-millisecond inference telemetry, in-browser code editor, and cluster health monitoring.
+              </p>
+              <div class="project-pills">
+                <span class="project-pill">Python</span>
+                <span class="project-pill">FastAPI</span>
+                <span class="project-pill">C++ Inference</span>
+                <span class="project-pill">WebSockets</span>
+                <span class="project-pill">React 19</span>
+              </div>
+              <div class="project-card-footer">
+                <a href="#contact" class="project-btn-link">VIEW ARCHITECTURE →</a>
+                <span class="tag-dim">AI SOFTWARE</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 13: Quantum Trader FinTech Terminal (Software Dev) -->
+          <div class="project-card" data-category="software">
+            <div class="project-thumb-box">
+              <span class="project-badge-type">SOFTWARE // FINTECH SYSTEMS</span>
+              <img src="assets/images/project-3-fintech.jpg" alt="Quantum Trader High-Frequency Financial Terminal">
+            </div>
+            <div class="project-content">
+              <span class="tag-dim">// 13 ASSET TRADING SOFTWARE</span>
+              <h3 class="project-title">Quantum Trader Financial Terminal</h3>
+              <p class="project-desc">
+                High-frequency asset trading software engine featuring real-time Level 2 order book execution, sub-10ms WebSockets ticker, Canvas 2D candlestick charting, and automated risk control.
+              </p>
+              <div class="project-pills">
+                <span class="project-pill">TypeScript</span>
+                <span class="project-pill">Node.js</span>
+                <span class="project-pill">WebSockets</span>
+                <span class="project-pill">Canvas 2D</span>
+                <span class="project-pill">Redis</span>
+              </div>
+              <div class="project-card-footer">
+                <a href="#contact" class="project-btn-link">VIEW CASE STUDY →</a>
+                <span class="tag-dim">TRADING TERMINAL</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         EXPERIENCE / BACKGROUND CARD STACK (Light Floating Card on Dark)
+         ====================================================================== -->
+    <section class="experience-section" id="experience">
+      <div class="container">
+        <div class="experience-card-elevated">
+          
+          <div class="experience-card-header">
+            <span class="studio-tag" style="color: var(--color-amber-vibrant); margin-bottom: 0.5rem;">CAREER TRAJECTORY</span>
+            <h2>Turning Ideas into <span>Scalable Systems</span></h2>
+          </div>
+
+          <div class="experience-list">
+            <!-- Row 1 -->
+            <div class="experience-row">
+              <div>
+                <div class="exp-role-title">Full Stack Systems Architect</div>
+                <div class="exp-company">Enterprise SaaS & Web</div>
+              </div>
+              <div class="exp-desc">
+                Architecting high-performance web applications, distributed APIs, and scalable design systems for international clients.
+              </div>
+              <div class="exp-period">2024 — Present</div>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="experience-row">
+              <div>
+                <div class="exp-role-title">Senior Creative Engineer</div>
+                <div class="exp-company">PixelCraft Studio</div>
+              </div>
+              <div class="exp-desc">
+                Delivering high-end interactive websites, micro-motion animations, and bespoke web apps with Next.js and TypeScript.
+              </div>
+              <div class="exp-period">2022 — 2024</div>
+            </div>
+
+            <!-- Row 3 -->
+            <div class="experience-row">
+              <div>
+                <div class="exp-role-title">Full Stack Developer</div>
+                <div class="exp-company">Agency & Freelance</div>
+              </div>
+              <div class="exp-desc">
+                Building responsive marketing platforms, custom dashboards, e-commerce stores, and high-converting landing pages.
+              </div>
+              <div class="exp-period">2020 — 2022</div>
+            </div>
+          </div>
+
+          <div class="experience-cta-wrap">
+            <a href="#contact" class="btn-start-project" style="background: #0A0B0E; color: #FFFFFF;">
+              <span>LET'S WORK TOGETHER</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         AWARDS & ARCHITECTURAL BENCHMARKS (Dark Table Layout)
+         ====================================================================== -->
+    <section class="benchmarks-section" id="benchmarks">
+      <div class="container">
+        <div class="benchmarks-header-row">
+          <div>
+            <span class="studio-tag" style="margin-bottom: 0.5rem;">VERIFIED BENCHMARKS</span>
+            <h2 class="benchmarks-title">ENGINEERING STANDARDS</h2>
+          </div>
+          <a href="#contact" class="btn-start-project" style="padding: 0.65rem 1.6rem; font-size: 0.8rem;">
+            <span>VIEW CODE STANDARDS →</span>
+          </a>
+        </div>
+
+        <table class="benchmarks-table">
+          <thead>
+            <tr>
+              <th>BENCHMARK STANDARD</th>
+              <th>ENGINEERING DOMAIN</th>
+              <th style="text-align: right;">YEAR</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>100% Custom Code Architecture</strong></td>
+              <td class="cell-org">Zero Bloat • Modular Systems</td>
+              <td class="cell-date">2026</td>
+            </tr>
+            <tr>
+              <td><strong>99% Google Lighthouse Performance</strong></td>
+              <td class="cell-org">Sub-second Load Speeds</td>
+              <td class="cell-date">2026</td>
+            </tr>
+            <tr>
+              <td><strong>Type-Safe End-to-End Delivery</strong></td>
+              <td class="cell-org">TypeScript & Clean API Design</td>
+              <td class="cell-date">2025</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Metrics Grid -->
+        <div class="metrics-grid">
+          <div class="metric-box">
+            <span class="metric-number highlight">100%</span>
+            <span class="metric-label">CUSTOM ARCHITECTURE</span>
+          </div>
+          <div class="metric-box">
+            <span class="metric-number">90+</span>
+            <span class="metric-label">LIGHTHOUSE PERFORMANCE</span>
+          </div>
+          <div class="metric-box">
+            <span class="metric-number highlight">3.7X</span>
+            <span class="metric-label">DELIVERY VELOCITY</span>
+          </div>
+          <div class="metric-box">
+            <span class="metric-number">10+</span>
+            <span class="metric-label">PRODUCTION PLATFORMS</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         WHAT I OFFER (Split Cards Section)
+         ====================================================================== -->
+    <section class="services-showcase-section" id="services">
+      <div class="container">
+        <div class="services-header-wrap">
+          <span class="studio-tag" style="margin-bottom: 0.5rem;">DEVELOPMENT SERVICES</span>
+          <h2 class="services-main-title">WHAT I OFFER</h2>
+          <p class="services-sub-intro">
+            Comprehensive full-stack engineering and bespoke web development packages designed to scale your operations, convert clients, and dominate search rankings.
+          </p>
+        </div>
+
+        <div class="services-split-cards">
+          <!-- Card 1: Full-Stack Web Applications -->
+          <div class="service-split-card">
+            <div class="service-left-head">
+              <div class="service-index-pill">// SERVICE 01</div>
+              <h3>FULL-STACK WEB APPLICATIONS</h3>
+              <span class="service-sla-tag">★ ENTERPRISE ARCHITECTURE</span>
+            </div>
+            <div class="service-desc-right">
+              <p>
+                Engineering custom dashboards, scalable SaaS platforms, and dynamic web applications built with React 19, Next.js 15, Node.js, and high-performance database architectures.
+              </p>
+              <div class="service-features-grid">
+                <span>Custom Next.js & React 19 Architecture</span>
+                <span>Real-Time Database & REST/GraphQL APIs</span>
+                <span>Stripe & Multi-Currency Payment Engines</span>
+                <span>Sub-Second Page Transitions & 90+ Lighthouse</span>
+              </div>
+              <div class="service-pills">
+                <span class="service-pill">Next.js 15</span>
+                <span class="service-pill">TypeScript</span>
+                <span class="service-pill">REST APIs</span>
+                <span class="service-pill">State Architecture</span>
+                <span class="service-pill">PostgreSQL</span>
+              </div>
+              <div class="service-action-row">
+                <a href="#contact" class="btn-service-inquire">INQUIRE ABOUT WEB APPS →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: High-Converting Websites & Clinic Platforms -->
+          <div class="service-split-card">
+            <div class="service-left-head">
+              <div class="service-index-pill">// SERVICE 02</div>
+              <h3>HIGH-CONVERTING WEBSITES & CLINIC PLATFORMS</h3>
+              <span class="service-sla-tag">★ CONVERSION & REVENUE FOCUS</span>
+            </div>
+            <div class="service-desc-right">
+              <p>
+                Crafting bespoke marketing websites, doctor clinic platforms, and luxury real estate portals engineered for maximum lead capture, brand prestige, and Google search dominance.
+              </p>
+              <div class="service-features-grid">
+                <span>Patient / Client Intake Booking Engines</span>
+                <span>Interactive 3D Tours & Comparison Sliders</span>
+                <span>Guaranteed 95+ Core Web Vitals Performance</span>
+                <span>Full Cross-Device Fluid Typography</span>
+              </div>
+              <div class="service-pills">
+                <span class="service-pill">Core Web Vitals</span>
+                <span class="service-pill">SEO Best Practices</span>
+                <span class="service-pill">Speed 90+</span>
+                <span class="service-pill">Conversion Focus</span>
+                <span class="service-pill">Next.js</span>
+              </div>
+              <div class="service-action-row">
+                <a href="#contact" class="btn-service-inquire">INQUIRE ABOUT WEBSITES →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Interactive UI/UX & Motion -->
+          <div class="service-split-card">
+            <div class="service-left-head">
+              <div class="service-index-pill">// SERVICE 03</div>
+              <h3>INTERACTIVE UI/UX & DIGITAL MOTION</h3>
+              <span class="service-sla-tag">★ 60FPS FLUID PHYSICS</span>
+            </div>
+            <div class="service-desc-right">
+              <p>
+                Translating bold creative visions into fluid, tactile digital realities using custom CSS animations, GSAP scroll triggers, interactive WebGL shaders, and responsive layout systems.
+              </p>
+              <div class="service-features-grid">
+                <span>Hardware-Accelerated GSAP Timelines</span>
+                <span>Interactive Mouse-Reactive Canvas Shaders</span>
+                <span>Tactile Magnetic Hover Micro-Interactions</span>
+                <span>Accessible Reduced-Motion Modes</span>
+              </div>
+              <div class="service-pills">
+                <span class="service-pill">GSAP</span>
+                <span class="service-pill">ScrollTrigger</span>
+                <span class="service-pill">WebGL / Canvas</span>
+                <span class="service-pill">Micro-Interactions</span>
+                <span class="service-pill">Pixel Precision</span>
+              </div>
+              <div class="service-action-row">
+                <a href="#contact" class="btn-service-inquire">INQUIRE ABOUT MOTION →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         CONTACT SECTION
+         ====================================================================== -->
+    <section class="contact-studio-section" id="contact">
+      <div class="container">
+        <div class="contact-header-wrap">
+          <span class="studio-tag">// DIRECT INQUIRIES & COMMISSIONS</span>
+          <h2 class="contact-headline">LET'S BUILD SOMETHING <span class="highlight-word">EXTRAORDINARY.</span></h2>
+          <p class="contact-subhead">
+            Currently accepting select commissions, bespoke web applications, and senior full-stack engineering partnerships for global clients.
+          </p>
+        </div>
+
+        <div class="contact-split-grid">
+          <!-- Left Info Column -->
+          <div class="contact-info-col">
+            <h3 class="contact-info-title">Direct Communication Channels</h3>
+            <p class="contact-info-desc">
+              Whether you need a conversion-engineered clinic website, luxury real estate portal, high-speed corporate platform, or scalable software architecture, reach out directly.
+            </p>
+
+            <!-- Primary Email Box -->
+            <div class="contact-email-card">
+              <span class="contact-channel-tag">★ PRIMARY DIRECT EMAIL</span>
+              <a href="mailto:akbarali1582005@gmail.com" class="primary-email-link" id="primary-email-display">akbarali1582005@gmail.com</a>
+              <div class="email-action-row">
+                <button type="button" class="btn-copy-email" id="btn-copy-email" onclick="navigator.clipboard.writeText('akbarali1582005@gmail.com'); this.innerText='COPIED TO CLIPBOARD ✓'; setTimeout(() => this.innerText='COPY EMAIL ADDRESS 📋', 2500);">
+                  COPY EMAIL ADDRESS 📋
+                </button>
+                <span class="email-guarantee">• Replies within 12–24h</span>
+              </div>
+            </div>
+
+            <!-- Secondary Accounts List (Directly After) -->
+            <div class="secondary-accounts-wrap">
+              <span class="secondary-accounts-tag">// OTHER DIRECT CHANNELS & PROFILES</span>
+              <div class="channel-pills-grid">
+                <a href="https://wa.me/?text=Hello%20Akbar%20Ali%2C%20I%20would%20like%20to%20discuss%20a%20project" target="_blank" rel="noopener" class="channel-pill channel-whatsapp">
+                  <span class="channel-dot"></span>
+                  <span class="channel-name">WhatsApp Direct</span>
+                  <span class="channel-arrow">↗</span>
+                </a>
+                <a href="https://github.com/akbarali-dev" target="_blank" rel="noopener" class="channel-pill channel-github">
+                  <span class="channel-dot"></span>
+                  <span class="channel-name">GitHub / Code</span>
+                  <span class="channel-arrow">↗</span>
+                </a>
+                <a href="https://linkedin.com/in/akbarali-dev" target="_blank" rel="noopener" class="channel-pill channel-linkedin">
+                  <span class="channel-dot"></span>
+                  <span class="channel-name">LinkedIn / Network</span>
+                  <span class="channel-arrow">↗</span>
+                </a>
+                <a href="https://twitter.com/akbarali_dev" target="_blank" rel="noopener" class="channel-pill channel-twitter">
+                  <span class="channel-dot"></span>
+                  <span class="channel-name">X / Twitter</span>
+                  <span class="channel-arrow">↗</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Ledger Meta -->
+            <div class="contact-meta-ledger">
+              <div class="ledger-row">
+                <span class="l-key">// LOCATION</span>
+                <span class="l-val">Pakistan (PKT // GMT+5)</span>
+              </div>
+              <div class="ledger-row">
+                <span class="l-key">// AVAILABILITY</span>
+                <span class="l-val" style="color: var(--color-amber-vibrant);">● Open for Q4 Client Projects</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Interactive Form Column -->
+          <div class="contact-form-col">
+            <form id="contact-form" class="studio-form" action="https://api.web3forms.com/submit" method="POST">
+              <!-- Web3Forms Access Key & Configuration -->
+              <input type="hidden" name="access_key" value="13e4f4af-6eeb-4bc5-a286-d8c1f86194d5">
+              <input type="hidden" name="subject" value="New Client Inquiry — Akbar Ali Studio Portfolio">
+              <input type="hidden" name="from_name" value="Akbar Ali Portfolio Client">
+              <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+              <div class="form-title-bar">
+                <span>// PROJECT INQUIRY PROTOCOL</span>
+                <span style="color: var(--color-amber-vibrant);">DIRECT TO GMAIL</span>
+              </div>
+
+              <div class="form-group">
+                <label for="form-name">Your Name / Organization *</label>
+                <input type="text" id="form-name" name="name" class="form-input" placeholder="e.g. Dr. Jennifer Vance / Vance Clinic" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-email">Email Address *</label>
+                <input type="email" id="form-email" name="email" class="form-input" placeholder="jennifer@vanceclinic.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-project-type">Project Scope / Category</label>
+                <select id="form-project-type" name="project_scope" class="form-input form-select">
+                  <option value="Medical / Aesthetic Clinic Website">Medical / Aesthetic Clinic Website</option>
+                  <option value="Luxury Real Estate Showcase Portal">Luxury Real Estate Showcase Portal</option>
+                  <option value="Bespoke Brand / Corporate Web Platform">Bespoke Brand / Corporate Web Platform</option>
+                  <option value="Full Stack Software / SaaS Development">Full Stack Software / SaaS Development</option>
+                  <option value="Lighthouse Speed & Architecture Audit">Lighthouse Speed & Architecture Audit</option>
+                  <option value="Other High-Impact Project">Other High-Impact Project</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="form-message">Project Objectives & Deliverables *</label>
+                <textarea id="form-message" name="message" class="form-input" rows="4" placeholder="Briefly describe your goals, required pages, timeline, and design aesthetic..." required></textarea>
+              </div>
+
+              <button type="submit" id="form-submit-btn" class="btn-start-project" style="width: 100%; justify-content: center; margin-top: var(--space-2);">
+                <span>TRANSMIT INQUIRY →</span>
+              </button>
+
+              <div id="form-status-msg" class="form-status-msg" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       ULTRA HIGH-END STUDIO FOOTER (Matt Becker / Awwwards Direction)
+       ========================================================================== -->
+  <footer class="studio-footer">
+    
+    <!-- Giant Watermark Background Wordmark -->
+    <div class="footer-watermark-bg" aria-hidden="true">AKBAR ALI</div>
+
+    <!-- Main Footer Container -->
+    <div class="container footer-content-wrap">
+      
+      <!-- Top Huge Action Ribbon -->
+      <div class="footer-action-banner">
+        <div class="banner-text">
+          <span class="studio-tag">// WORLD-CLASS DIGITAL EXPERIENCES</span>
+          <h2 class="footer-giant-callout">LET'S CREATE SOMETHING REMARKABLE.</h2>
+        </div>
+        <div class="banner-cta">
+          <a href="#contact" class="btn-amber" style="padding: 1rem 2.2rem; font-size: 1rem;">
+            <span>START A PROJECT →</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- 4-Column Studio Directory Grid -->
+      <div class="footer-grid-columns">
+        
+        <!-- Column 1: Studio Identity -->
+        <div class="footer-col studio-dossier-col">
+          <div class="footer-brand-title">
+            <span class="footer-brand-name">AKBAR ALI</span>
+            <span class="footer-status-pill">● ACTIVE // PAKISTAN</span>
+          </div>
+          <p class="footer-bio-summary">
+            Executive Creative Full Stack Developer crafting bespoke web applications, high-converting platforms for clinics and luxury brands, and resilient software systems.
+          </p>
+          <div class="footer-location-tag">
+            <span>📍 Based in Pakistan</span>
+            <span class="dot-sep">•</span>
+            <span>Serving Global Clients</span>
+          </div>
+        </div>
+
+        <!-- Column 2: Navigation Directory -->
+        <div class="footer-col">
+          <span class="footer-col-header">// NAVIGATION</span>
+          <ul class="footer-nav-list">
+            <li><a href="#hero" class="footer-nav-link"><span class="f-num">[01]</span> Overview & Hero</a></li>
+            <li><a href="#about" class="footer-nav-link"><span class="f-num">[02]</span> Architecture & Craft</a></li>
+            <li><a href="#projects" class="footer-nav-link"><span class="f-num">[03]</span> Selected Works (13)</a></li>
+            <li><a href="#experience" class="footer-nav-link"><span class="f-num">[04]</span> Career & Milestones</a></li>
+            <li><a href="#benchmarks" class="footer-nav-link"><span class="f-num">[05]</span> Speed Benchmarks</a></li>
+            <li><a href="#services" class="footer-nav-link"><span class="f-num">[06]</span> Capabilities</a></li>
+            <li><a href="#contact" class="footer-nav-link"><span class="f-num">[07]</span> Direct Inquiry</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Direct Inquiries & Priority Email -->
+        <div class="footer-col">
+          <span class="footer-col-header">// DIRECT INQUIRIES</span>
+          <div class="footer-inquiry-box">
+            <span class="f-label">PRIMARY INBOX</span>
+            <a href="mailto:akbarali1582005@gmail.com" class="f-email-highlight">akbarali1582005@gmail.com</a>
+          </div>
+          <div class="footer-spec-item">
+            <span class="f-spec-label">RESPONSE SLA</span>
+            <span class="f-spec-val">&lt; 12 Hours Guaranteed</span>
+          </div>
+          <div class="footer-spec-item">
+            <span class="f-spec-label">CONTRACT MODELS</span>
+            <span class="f-spec-val">Fixed Project / Retainer / Sprints</span>
+          </div>
+          <div class="footer-spec-item">
+            <span class="f-spec-label">TIMEZONE</span>
+            <span class="f-spec-val">PKT (UTC +05:00)</span>
+          </div>
+        </div>
+
+        <!-- Column 4: Secondary Accounts & Ecosystem -->
+        <div class="footer-col">
+          <span class="footer-col-header">// CHANNELS & PROFILES</span>
+          <ul class="footer-social-list">
+            <li>
+              <a href="https://wa.me/?text=Hello%20Akbar%20Ali" target="_blank" rel="noopener" class="footer-social-link">
+                <span>WhatsApp Direct</span>
+                <span class="f-icon">↗</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/akbarali-dev" target="_blank" rel="noopener" class="footer-social-link">
+                <span>GitHub Repositories</span>
+                <span class="f-icon">↗</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://linkedin.com/in/akbarali-dev" target="_blank" rel="noopener" class="footer-social-link">
+                <span>LinkedIn Profile</span>
+                <span class="f-icon">↗</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/akbarali_dev" target="_blank" rel="noopener" class="footer-social-link">
+                <span>X / Twitter</span>
+                <span class="f-icon">↗</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://dribbble.com" target="_blank" rel="noopener" class="footer-social-link">
+                <span>Dribbble Inspiration</span>
+                <span class="f-icon">↗</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom Sub-Footer Utility Bar -->
+      <div class="footer-bottom-bar">
+        <div class="footer-bottom-left">
+          &copy; 2026 AKBAR ALI. ALL RIGHTS RESERVED.
+        </div>
+
+        <div class="footer-bottom-center">
+          <span class="status-live-dot"></span>
+          <span>PAKISTAN // <strong id="footer-live-pak-time">--:--:-- PKT</strong></span>
+          <span class="dot-sep">•</span>
+          <span>LIGHTHOUSE 90+ GUARANTEED</span>
+        </div>
+
+        <div class="footer-bottom-right">
+          <a href="#hero" class="btn-back-to-top" id="btn-back-to-top">
+            <span>BACK TO TOP</span>
+            <span class="arrow-up">↑</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
